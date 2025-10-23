@@ -24,6 +24,7 @@ oh no: Bun has crashed. This indicates a bug in Bun, not your code.
 ### Requirements:
 - Bun
 - MySQL
+- Windows OS
 
 
 ### Steps to reproduce:
