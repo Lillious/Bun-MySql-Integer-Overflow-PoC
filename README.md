@@ -32,6 +32,13 @@ oh no: Bun has crashed. This indicates a bug in Bun, not your code.
 - Execute the `mysql_db_setup.sql` script
 - Run `bun poc` in the terminal
 
+
+### Assumed Problem:
+The MySQL implementation isn't correctly handling empty string values.
+
+### Workaround:
+A workaround is to set the row value to NULL instead of an empty string.
+
 <br>
 Proof of Concept by @Lillious
 <hr>
