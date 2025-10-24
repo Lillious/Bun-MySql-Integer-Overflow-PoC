@@ -10,6 +10,6 @@
     "typescript": "^5"
   },
   "scripts": {
-    "poc": "bun index.ts"
+    "poc": "bun run index.ts"
   }
 }

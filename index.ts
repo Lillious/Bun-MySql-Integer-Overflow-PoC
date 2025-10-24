@@ -8,11 +8,12 @@ const mysql_connection = new SQL({
     database: 'poc_db',
     port: 3306,
     tls: {},
-    max: 5,
+    max: 50,
     idleTimeout: 10,
     maxLifetime: 0,
     connectionTimeout: 10
 });
 
-const result = await mysql_connection.unsafe('SELECT poc_col FROM poc_table WHERE id = 1');
-console.log(result);
+await mysql_connection.unsafe('SELECT poc_col FROM poc_table WHERE id = 1');
+await mysql_connection.unsafe('SELECT poc_col FROM poc_table WHERE id = 1');
+await mysql_connection.unsafe('SELECT poc_col FROM poc_table WHERE id = 1');
